@@ -4,5 +4,7 @@
   <li>Email: {{email}}</li>
   <li>twitter: {{twitter}}</li>
   <li>{{fullName}}</li>
+  <li>{{link-to 'Edit info' 'friends.edit' this}}</li>
 </ul>
 {{link-to 'Friends' 'friends.index'}}
+<a href="#" {{action "delete" this}}>Delete</a>
