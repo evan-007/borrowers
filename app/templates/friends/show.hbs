@@ -3,8 +3,11 @@
   <p>{{lastName}}</p>
   <p>{{email}}</p>
   <p>{{twitter}}</p>
-  <p>{{fullName}}</p>
+  <p>{{link-to 'Lend article' 'articles.new'}}</p>
   <p>{{link-to 'Edit info' 'friends.edit' this}}</p>
   {{link-to 'Friends' 'friends.index'}}
   <a href="#" {{action "delete" this}}>Delete</a>
+</div>
+<div class='articles-container'>
+  {{outlet}}
 </div>
