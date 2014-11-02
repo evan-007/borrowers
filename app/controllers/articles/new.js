@@ -9,7 +9,7 @@ export default Ember.ObjectController.extend({
       if (this.get('isValid')) {
         return true;
       } else {
-        this.set('errorMessage', 'You have to fill in all the fields')
+        this.set('errorMessage', 'You have to fill in all the fields');
         return false;
       }
     }

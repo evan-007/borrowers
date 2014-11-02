@@ -2,8 +2,8 @@
   <thead>
     <tr>
       <th>Description</th>
-      <th>Borrowed since</th>
-      <th></th>
+      <th>Notes</th>
+      <th>Borrowed Since</th>
       <th></th>
     </tr>
   </thead>
@@ -11,8 +11,8 @@
     {{#each itemController='articles/item'}}
     <tr>
       <td>{{description}}</td>
-      <td>{{createdAt}}</td>
-      <td>{{createdAt}}</td>
+      <td>{{notes}}</td>
+      <td>{{formatted-date createdAt 'LL'}}</td>
       <td>{{view Ember.Select content=states selection=state}}</td>
       <td>
         {{#if isSaving}}

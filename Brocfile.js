@@ -5,6 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp();
 
 app.import('bower_components/picnic/releases/latest.min.css');
+app.import('bower_components/moment/moment.js');
 app.import('vendor/fontello/fontello.css');
 app.import('vendor/fontello/font/fontello.ttf', {
   destDir: 'font'
