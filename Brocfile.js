@@ -19,8 +19,6 @@ app.import('vendor/fontello/font/fontello.svg', {
 app.import('vendor/fontello/font/fontello.woff', {
   destDir: 'font'
 });
-
-
 // Use `app.import` to add additional libraries to the generated
 // output files.
 //
